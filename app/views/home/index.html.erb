@@ -18,9 +18,11 @@
 <script>
   function openNav() {
   document.getElementById('home-nav').style.width = '170px'
+  document.getElementById("home-nav-overlay").style.display = "block"
   }
 
   function closeNav() {
-  document.getElementById('home-nav').style.width = '0%';
+  document.getElementById('home-nav').style.width = '0%'
+  document.getElementById("home-nav-overlay").style.display = "none";
   }
 </script>
