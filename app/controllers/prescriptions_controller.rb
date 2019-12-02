@@ -26,4 +26,4 @@ class PrescriptionsController < ApplicationController
     )
   end
 
-end
+end 

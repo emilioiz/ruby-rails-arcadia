@@ -38,56 +38,36 @@ export default class PrescriptionForm extends React.Component {
   render() {
     let myObj = this.state.drug
     return(
-      <div>
-        <span>search for 0002-3238</span>
-        <div>
-          <input
-          type='search' 
-          id='ndcCode'
-          onChange = {this.handleInputChange('ndcQuery')}
-          placeholder='Search by NDC Code'
-          />
-          <span>
-            <button className="button is-info" onClick={this.fetchDrugs}>
-              Search
-            </button>
-          </span>
+      <form id='add-prescription' onSubmit={this.handleSubmit}>
+        <div id='add-prescription-status-bar'></div>
+        <div id='add-prescription-header'>Add Medication</div>
+        <div id='add-prescription-form-fields'>
+          <div className='add-prescription-form-field-label'>NDC Code</div>
+          <div id='add-prescription-search'>
+            <input type='search' id='ndcCode' onChange = {this.handleInputChange('ndcQuery')} placeholder='Ex. 55566-7501'/>
+            <div id='add-prescription-search-icon'>  
+              <i className='far fa-search button is-info' onClick={this.fetchDrugs}></i>
+            </div>      
+          </div>
+          <div className='add-prescription-form-field-label' >Brand Name</div>  
+          <input id="brand" type="string" value={myObj.brandName} readOnly/>
+          <div className='add-prescription-form-field-label' >Generic Name</div> 
+          <input id="generic-name" type="string" value={myObj.genericName} readOnly/>
+          <div className='add-prescription-form-field-label' >Dosage Form</div> 
+          <input id="dosage-form" type="string" value={myObj.dosageForm} readOnly/>
+          <div className='add-prescription-form-field-label' >Product Type</div> 
+          <input id="product-type" type="string" value={myObj.productType} readOnly/>
+          <div className='add-prescription-form-field-label' >Product ID</div> 
+          <input id="product-id" type="string" value={myObj.productID} readOnly/>
+          <div className='add-prescription-form-field-label' >Product NDC</div> 
+          <input id="product-ndc" type="string" value={myObj.productNDC} readOnly/>
+          <div className='add-prescription-form-field-label' >My Notes</div>
+          <input id="prescription-notes" onChange={this.handleInputChange('userNotes')} type="text" />
         </div>
-
-        <div>
-          <form onSubmit={this.handleSubmit}>
-            <div>
-              <label htmlFor="brand">Brand Name</label>
-              <input id="brand" type="text" value={myObj.brandName} readOnly/>
-            </div>
-            <div>
-              <label htmlFor="brand">Generic Name</label>
-              <input id="generic-name" type="text" value={myObj.genericName} readOnly/>
-            </div>
-            <div>
-              <label htmlFor="brand">Dosage Form</label>
-              <input id="dosage-form" type="text" value={myObj.dosageForm} readOnly/>
-            </div>
-            <div>
-              <label htmlFor="brand">Product Type</label>
-              <input id="product-type" type="text" value={myObj.productType} readOnly/>
-            </div>
-            <div>
-              <label htmlFor="brand">Product Id</label>
-              <input id="product-id" type="text" value={myObj.productID} readOnly/>
-            </div>
-            <div>
-              <label htmlFor="brand">Product NDC</label>
-              <input id="product-ndc" type="text" value={myObj.productNDC} readOnly/>
-            </div>
-            <div>
-              <label htmlFor="notes">Notes</label>
-              <input id="notes" onChange={this.handleInputChange('userNotes')} type="text" />
-            </div>
-              <button type="submit">Submit</button>
-          </form>
-        </div>
-      </div>
+        <button id='add-prescription-form-submit' type="submit">
+          Add
+        </button>
+      </form>
       )
     }
   }

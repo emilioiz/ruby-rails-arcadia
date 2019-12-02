@@ -1,0 +1,103 @@
+#add-prescription {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 24px 70px 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  background-color: #FFF8F0;
+  margin-bottom: 45px;
+}
+
+#add-prescription-status-bar {
+  grid-area: 1 / 1 / 2 / 2;
+  background-color: #FFEFDC;
+}
+
+#add-prescription-header {
+  grid-area: 2 / 1 / 3 / 2;
+  font-size: 24px;
+  font-weight: bold;
+  color: #200026;
+  text-align: center;
+  padding-top: 4px;
+}
+
+#add-prescription-form {
+  grid-area: 3 / 1 / 4 / 2;
+  display: flex;
+  flex-direction: column;
+  max-width: 340px;
+  height: 60px;
+}
+
+#add-prescription-form-submit {
+  width: 100vw;
+  height: 78px;
+  font-size: 36px;
+  background-color: #200026;
+  color: #FFFFFF;
+  border: 0px;
+  position: fixed;
+  bottom: 0;
+}
+
+#add-prescription-form-fields {
+  display: flex;
+  flex-direction: column;
+}
+
+#add-prescription-form-fields > input {
+  min-width: 340px;
+  min-height: 50px;
+  margin: 8px 10px 16px 10px;
+  border: 1px solid rgba(132,75,143,0.55);
+  border-radius: 2px;
+  background-color: white;
+  text-indent: 10px;
+  color: #6D227B;
+  font-size: 14px;
+}
+
+#add-prescription-form-fields #prescription-notes {
+  min-height: 100px;
+}
+
+.add-prescription-form-field-label {
+  font-size: 14px;
+  color: #200026;
+  margin-left: 10px;
+}
+
+#add-prescription-search {
+  min-width: 340px;
+  min-height: 50px;
+  margin: 8px 10px 16px 10px;
+  display: flex;
+  align-items: center;
+}
+
+#add-prescription-search input {
+  min-width: 348px;
+  min-height: 50px;
+  border: 1px solid rgba(132,75,143,0.55);
+  border-radius: 2px;
+  background-color: white;
+  text-indent: 10px;
+  color: #6D227B;
+  font-size: 14px;
+}
+
+#add-prescription-search-icon {
+  background-color: #844B8F;
+  min-height: 50px;
+  min-width: 43px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#add-prescription-search-icon i {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
