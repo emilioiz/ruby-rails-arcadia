@@ -1,0 +1,36 @@
+<%= form_with url: events_path do |form| %>
+  <%= label_tag(:q, "Create New Event:") %>
+    <p>
+    <%= select_tag("event_type", raw("<option>Prescription</option><option>Contact</option>"))%>
+    </p>
+  <p>
+      <%# Conditional evaluation will be added later %>
+      <p>
+      <%= label_tag(:name, "Enter Dr. Name or National Drug Code #:") %>
+      </p>
+      <p>
+      <%= text_field_tag(:name) %>
+      </p>
+  </p>
+
+      <p>
+      <%= label_tag(:date, "Enter Date & Time:") %>
+      </p>
+
+  <p>
+      <%= datetime_field(:event_date_time, :event_time, min: Date.today) %>
+  </p>
+
+  <p>
+      <p>
+      <%= label_tag(:event_note, "Event Notes:") %>
+      </p>
+      <p>
+      <%= text_field_tag(:event_note) %>
+      </p>
+  </p>
+
+  <%= submit_tag("Save")%>
+  <%= button_tag("Cancel")%>
+
+<% end %>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FinalProjectTemplate</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ramabhadra&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arimo&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ab06b5d6e3.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Work+Sans:400,600" rel="stylesheet">
+  </head>
+  <%# Scroll bar hidden for mobile dev purposes only %>
+  <%# Do not remove this style %>
+  <style>
+    body::-webkit-scrollbar { width: 0 !important }
+    /* html { background-color: black } */
+  </style>
+  <%# Do not remove this style %>
+  <body>
+    <div class='mob-only mob-only-bkgrd-cr'>
+      <div class='mob-only-div'>
+        <i class='fas fa-mobile-android-alt mob-only-div-icon'></i>
+        <span class='mob-only-div-text'>MAX SIZE</span>
+        <span class='mob-only-div-text'>414 X 896</span>
+      </div>
+    </div>
+    <%= yield %>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<div id='home'>
+  <div id='home-div1'>
+    <div id='home-nav-top' class='bkgrd-cr-vanilla'></div>
+    <div id='home-nav-bottom' class='bkgrd-cr-taupe'>
+      <span onclick='openNav()'> 
+        <i class="fas fa-ellipsis-v home-nav-bottom-icon"></i>
+     
+      </span>
+    </div>
+  </div>
+  <div id='home-div2'>
+    <%= react_component("Home") %>
+  </div>
+</div>
+
+<%= render 'global/nav' %>
+
+<script>
+  function openNav() {
+  document.getElementById('home-nav').style.width = '170px'
+  }
+
+  function closeNav() {
+  document.getElementById('home-nav').style.width = '0%';
+  }
+</script>

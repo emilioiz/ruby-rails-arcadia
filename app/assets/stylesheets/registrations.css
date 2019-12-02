@@ -1,0 +1,240 @@
+.sign-up-body{
+  background-color: #FFF5E9;
+  background-image: url(https://arcadia-static-assets.s3.amazonaws.com/arcadia-svgs/sign-up-img.png);
+  background-repeat: no-repeat;
+  background-position: right 215px top -140px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 6% 15% 40% 25% 14%;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.sign-up-close{
+  border: none;
+  font-size: 20px;
+  background-color: #FFF5E9; 
+  float: right;  
+}
+
+.sign-up-header {
+  color: #200026;	
+  font-family:   'Roboto', sans-serif;	
+  font-size: 30px;	
+  padding: 5px;	
+  padding-top: 15px;  
+}
+
+.sign-up-text{	
+  color: #844B8F;	
+  font-family: 'Avenir';	
+  font-size: 12px;	
+  font-weight: 300;	  
+}
+
+.field-email, .field-password{
+  text-align: center;
+}
+
+.email-sign-up{
+  height: 20px;	
+  width: 105px;	
+  font-family: 'Avenir';	
+  font-size: 18px;	
+  font-weight: 300;	
+  line-height: 25px;
+  background-color: #FFF5E9;
+}
+
+.password-sign-up{
+  height: 22px;	
+  width: 105px;	
+  color: #ECCFF7;	
+  font-family: Avenir;	
+  font-size: 18px;	
+  font-weight: 300;	
+  line-height: 25px;
+  background-color: #FFF5E9;
+}
+
+.sign-up-show, .sign-up-show-confirm{
+  color: rgba(132,75,143,0.55);	
+  font-family: "Helvetica Neue";
+  font-size: 10px;	
+  font-weight: bold;	
+  float: right;
+  background-color: #FFF5E9 ;
+  border: none;
+  padding-right: 5px;
+  
+}
+
+.email-div{
+padding-top: 24px;
+}
+
+.password-div{
+  padding-top: 36px;
+}
+
+.password-confirm-div{
+  padding-top: 36px;
+}
+
+.sign-up {
+ text-align: center;
+ padding: 10px;
+ padding-top: 0;
+}
+
+.sign-up-skip{
+  display: flex;
+  justify-content: center;
+  color: #844B;
+  font-size: 14px;
+}
+
+.sign-up-field  {	
+  height: 60px;	
+  width: 301px;
+  border: none;
+  border-bottom: 1px solid #844B
+}
+
+::placeholder{
+  color:#ECCFF7;  
+}
+
+.consent {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  padding-left: 20px;
+}
+
+.rectangle{
+  box-sizing: border-box;	
+  height: 20px;	
+  width: 20px;	
+  border: 1px solid #200026;	
+  background-color: #FFF
+}
+
+.sign-up-confirm {
+  height: 45px;	
+  width: 220px;	
+  color: #200026;	
+  font-family: Avenir;	
+  font-size: 11px;	
+  font-weight: 900;	
+  line-height: 15px;
+  padding-left: 15px;
+}
+
+.sign-up {
+  text-align: center;
+  padding: 10px;
+  padding-top: 0;
+ }
+
+.sign_up-btn {
+  height: 45px;	
+  width: 220px;	
+  border-radius: 8px;	
+  background-color: #ECCFF7;	
+  font-family: Avenir;
+  font-family: Helvetica;	
+  font-size: 18px;
+  color:  #200026;
+}
+
+.sign-up-hr{
+  border: 0.5px solid rgba(239,196,247,0.2);
+}
+
+.alt-sign-up{
+  text-align: center;
+}
+
+.or-sign-up{
+  height: 23px;	
+  width: 137px;	
+  color: rgba(132,75,143,0.55);	
+  font-family: "Lucida Grande";	
+  font-size: 18px;	
+  line-height: 21px;
+  margin:auto;
+  padding: 20px;
+}
+
+.google-btn{
+  height: 23px;	
+  width: 100px;	
+  color: #FFFFFF;	
+  font-family: Helvetica;	
+  font-size: 18px;	
+  line-height: 22px;	
+  text-align: center;
+  height: 23px;	
+  width: 100px;	
+  height: 45px;	
+  width: 220px;	
+  background-color: #DD4B39;
+  border-radius: 4px;   
+}
+
+.facebook-btn{
+  height: 23px;	
+  width: 100px;	
+  color: #FFFFFF;	
+  font-family: Helvetica;	
+  font-size: 18px;	
+  line-height: 22px;	
+  text-align: center;
+  height: 23px;	
+  width: 100px;	
+  height: 45px;	
+  width: 220px;	
+  background-color: #415DAF;
+  border-radius: 4px;
+}
+
+.close-div { 
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.header-div { 
+  grid-area: 2 / 1 / 3 / 2;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr;
+  margin: auto;
+  text-align: center;
+}
+
+.form-div { 
+  grid-area: 3 / 1 / 4 / 2;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3fr;
+  margin: auto;
+  text-align: center;
+}
+
+.consent-div { 
+  grid-area: 4 / 1 / 5 / 2;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3fr;
+  margin: auto;
+  text-align: center;
+}
+
+.alt-div { 
+  grid-area: 5 / 1 / 6 / 2;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3fr;
+  margin: auto;
+  text-align: center;
+}

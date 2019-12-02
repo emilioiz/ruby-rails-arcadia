@@ -1,0 +1,125 @@
+.journal-header {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.journal-placeholder {
+  background-color: #FFEFDC ;
+  height: 24px;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+.journal-nav {
+  font-family: Srimo, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+.journal-nav-buttons {
+  display: flex;
+  height: 44px;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 2px solid #E8E3DC;
+  box-shadow: 0px 0px 4px 0px #E8E3DC;
+  align-items: center;
+  margin: 0;
+}
+
+#journal-nav-button1 {
+  margin: 0;
+}
+
+#journal-nav-back {
+  margin: 5px 0 0 0;
+}
+
+#journal-nav-button2 {
+  margin: 0;
+}
+
+#journal-nav-button3 {
+ margin: 5px 5px 0 0;
+ padding: 10px;
+}
+
+#trash-icon {
+  color: rgb(132,75,142);
+  font-weight: 700;
+  font-size: 24px;
+}
+
+
+.journal-entry-container {
+  margin: 5px 0px;
+  display: flex;
+  flex-direction: row;
+  height: 96px;
+  border-bottom: 2px solid #E8E3DC;
+  box-shadow: 0px 0px 4px 0px #E8E3DC;
+}
+
+.journal-entry-info {
+  padding: 10px;
+  display : flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-basis: 25%;
+
+}
+
+.journal-entry-info div {
+  flex: 1;
+  margin: 0px;
+  flex-direction: row;
+  flex-basis: 20px;
+}
+
+.info-box {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 120px;
+}
+
+.journal-entry-description {
+  padding: 10px 20px 10px 10px;
+  flex: 2;
+  flex-wrap: wrap;
+  flex-basis: 66.6%;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.info-box:nth-child(1) {
+  flex: 1;
+  font-family: Srimo, sans-serif;
+  font-weight: 450;
+  font-size: 20px;
+  line-height: 22px;
+}
+
+
+.info-box:nth-child(2) {
+  flex: 1;
+  color: rgb(132,75,142);
+  font-family: Srimo, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.info-box:nth-child(3) {
+  flex: 1;
+  color: rgb(132,75,142);
+  font-family: Srimo, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+}

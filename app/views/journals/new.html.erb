@@ -1,0 +1,39 @@
+<div>
+  <%= form_for @journal, local: true do |form| %>
+    <p>
+      <%= form.label :title %><br>
+      <%= form.text_field :title %>
+    </p>
+
+    <p>
+      <%= form.label :description %><br>
+      <%= form.text_area :description %>
+    </p>
+
+    <p>
+      <%= form.submit 'Create Entries' %>
+    </p>
+  <% end %>
+</div>
+
+
+
+<h1>Journal#new</h1>
+<p>Find me in app/views/journals/new.html.erb</p>
+<br>
+
+
+<h1>Important to Journal</h1>
+
+<ul>
+  <li>
+    app/controllers/journals_controller.erb
+  </li>
+  <li>
+    app/views/journals/index.html.erb
+  </li>
+  <li>
+     app/views/journals/new.html.erb
+  </li>
+<ul>
+

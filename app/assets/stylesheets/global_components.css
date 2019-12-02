@@ -1,0 +1,112 @@
+/* Background Colors */
+.bkgrd-cr-barney {
+  background-color: #844b8f
+}
+
+.bkgrd-cr-taupe {
+  background-color: #fff8f0;
+}
+
+.bkgrd-cr-vanilla {
+  background-color: #fff5e9;
+}
+
+.bkgrd-cr-sheer {
+  background-color: rgba(255, 248, 240, 0.87);
+}
+
+.bkgrd-cr-periwinkle {
+  background-color:  rgba(241, 172, 254, 0.55);
+}
+
+.bkgrd-cr-burple {
+  background-color: rgba(32, 0, 38, 0.81);
+}
+
+/* Font Colors */
+.ft-cr-mixed-berries {
+  color:  #780D8D;
+}
+
+.ft-cr-periwinkle {
+  color:  rgba(241, 172, 254, 0.55);
+}
+
+.ft-cr-pleasent-purple {
+  color:  #8D5796;
+}
+
+.ft-cr-barney {
+  color: #844b8f;
+}
+
+.ft-cr-blurple-berry {
+  color: #b142c7;
+}
+
+.ft-cr-pure-white {
+  color: #ffff;
+}
+
+.ft-cr-deep-plum {
+  color: #200026;
+}
+
+.ft-cr-snow {
+  color: #DAF3FE;
+}
+
+/* Fonts */
+/* Same as Helvetica Neue Bold*/
+.ft-ramabhadra-12 {
+  font-family: 'Ramabhadra', sans-serif;
+  font-size: 12px;
+}
+  
+.ft-ramabhadra-24 {
+  font-family: 'Ramabhadra', sans-serif;
+  font-size: 24px;
+}
+
+.ft-ramabhadra-36 {
+  font-family: 'Ramabhadra', sans-serif;
+  font-size: 36px;
+}
+
+/* Same as Helvetica Neue regular*/
+.ft-arimo-12 {
+  font-family: 'Srimo', sans-serif;
+  font-size: 12px;
+}
+
+.ft-arimo-36 {
+  font-family: 'Srimo', sans-serif;
+  font-size: 36px;
+}
+
+
+/* Same as Avenir Next */
+.ft-nunito-10 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 10px;
+}
+
+.ft-nunito-12 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 12px;
+}
+
+.ft-nunito-18 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 18px;
+}
+
+.ft-nunito-20 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 20px;
+}
+
+.ft-nunito-24 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 24px;
+}

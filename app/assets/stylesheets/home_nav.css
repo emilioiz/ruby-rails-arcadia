@@ -1,0 +1,35 @@
+
+#home-nav {
+  height: 100%;
+  width: 0px;
+  padding: 0px;
+  position: fixed;
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  background-color: rgba(32, 0, 38, 0.81);
+  overflow-x: hidden;
+  transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+}
+
+#home-nav-close-btn {
+  position: absolute;
+  top: 27px;
+  right: 20px;
+}
+
+.home-nav-bottom-close-icon {
+  font-size: 40px;
+}
+
+#home-nav-overlay-content {
+  margin-top: 100px;
+}
+
+#home-nav-overlay-content div {
+  margin: 35px 0px 0px 10px;
+  white-space: nowrap;
+  position: relative;
+}
