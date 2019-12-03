@@ -28,6 +28,7 @@ class ContactsController < ApplicationController
       country: params[:country],
       notes: params[:notes]
     )
+  redirect_to contacts_url
   end
 
 end

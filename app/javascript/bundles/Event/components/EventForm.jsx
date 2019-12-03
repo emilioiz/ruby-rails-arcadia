@@ -62,32 +62,26 @@ export default class EventForm extends React.Component {
   
   render() {
     return(
-      <form onSubmit={this.handleSubmit}>
-        <div>
-          <label htmlFor="type">Type</label>
-            <select onChange={this.handleInputChange('type')} >
-              {this.optionsArray(this.state.eventTypeOptions).map(option => option)}
-            </select>
+      <form id='add-event' onSubmit={this.handleSubmit}>
+        <div id='add-event-status-bar'></div>
+        <div id='add-event-header'>New Activity</div>
+        <div id='add-event-form-fields'>
+          <div className='add-event-form-field-label'>Type</div>
+              <select onChange={this.handleInputChange('type')} >
+                {this.optionsArray(this.state.eventTypeOptions).map(option => option)}
+              </select>
+          <div className='add-event-form-field-label'>Name</div>
+              <select onChange={this.handleInputChange('name')} >
+                {this.state.eventTypeData.map(data => <option key={data.id} value={data.id}>{data.name}</option> )}
+              </select>
+          <div className='add-event-form-field-label'>Date</div>
+            <input id="date" onChange={this.handleInputChange('date')} type="date" />
+          <div className='add-event-form-field-label'>Time</div>
+            <input id="time" onChange={this.handleInputChange('time')} type="time" />
+          <div className='add-event-form-field-label'>Notes</div>
+            <input id="event-notes" onChange={this.handleInputChange('notes')} type="text" />
+          <button id='add-event-form-submit' type="submit" >Add</button>
         </div>
-        <div>
-          <label htmlFor="name">Name</label>
-            <select onChange={this.handleInputChange('name')} >
-              {this.state.eventTypeData.map(data => <option key={data.id} value={data.id}>{data.name}</option> )}
-            </select>
-        </div>
-        <div>
-          <label htmlFor="date">Date</label>
-          <input id="date" onChange={this.handleInputChange('date')} type="date" />
-        </div>
-        <div>
-          <label htmlFor="time">Time</label>
-          <input id="time" onChange={this.handleInputChange('time')} type="time" />
-        </div>
-        <div>
-          <label htmlFor="notes">Notes</label>
-          <input id="notes" onChange={this.handleInputChange('notes')} type="text" />
-        </div>
-        <button type="submit" >Submit</button>
       </form>
       )
     }

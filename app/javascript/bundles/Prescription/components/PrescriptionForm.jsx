@@ -40,7 +40,7 @@ export default class PrescriptionForm extends React.Component {
     return(
       <form id='add-prescription' onSubmit={this.handleSubmit}>
         <div id='add-prescription-status-bar'></div>
-        <div id='add-prescription-header'>Add Medication</div>
+        <div id='add-prescription-header'>New Medication</div>
         <div id='add-prescription-form-fields'>
           <div className='add-prescription-form-field-label'>NDC Code</div>
           <div id='add-prescription-search'>
