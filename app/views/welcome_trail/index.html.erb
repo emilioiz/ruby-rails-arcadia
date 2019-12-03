@@ -1,2 +1,129 @@
-<h1>User Welcome Trail</h1>
-<button><%= link_to "Continue",new_user_registration_path %></button>
+<div class="trail-body">
+
+  <div class="trail-slideshow-container">
+
+  <div class="trail-nav-div">
+    <div class="trail-nav"></div>
+  </div>
+
+  <div class="trail-progress-div">
+   <div class="trail-progress-bar" style='text-align: center;'>
+      <span class="dot" onclick='currentSlide(1)'></span>
+      <span class="dot" onclick='currentSlide(2)'></span>
+      <span class="dot" onclick='currentSlide(3)'></span>
+      <span class="dot" onclick='currentSlide(4)'></span>
+    </div>
+  </div>
+
+  <div class="trail-carousel-div">
+    <div class="mySlides fade">
+
+      <img  class="trail-img" src='https://arcadia-static-assets.s3.amazonaws.com/arcadia-svgs/Welcome+Page+Typewriter.svg' style='width: 100%;' alt="sally lightfoot crab"/>
+      <div class="trail-text">A place to document your treatments and medications<div class="trail-btn-div"><div class="trail-skip"><%= link_to "Skip", new_user_registration_path %></div></div></div>
+  </div>
+    
+
+    <div class="mySlides fade">
+
+      <img src='https://arcadia-static-assets.s3.amazonaws.com/arcadia-svgs/Welcome+Page+Clock.svg' style='width: 100%;' alt="fighting nazca boobies"/>
+      <div class="trail-text">Never miss another appointment<div class="trail-btn-div"><div class="trail-skip"><%= link_to "Skip", new_user_registration_path %></div></div></div>
+    </div>
+
+    <div class="mySlides fade">
+
+      <img  src='https://arcadia-static-assets.s3.amazonaws.com/arcadia-svgs/Welcome+Page+Group.svg' style='width: 100%;' alt="otovalo waterfall"/>
+      <div class="trail-text">Never feel alone while you go through your journey<div class="trail-btn-div"><div class="trail-skip"><%= link_to "Skip", new_user_registration_path %></div></div></div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="trail-welcome">Welcome to Arcadia</div>
+      <img  src='https://arcadia-static-assets.s3.amazonaws.com/arcadia-svgs/Welcome+Page+Baby.svg' style='width: 100%;' alt="pelican"/>
+      <div class="trail-btn-div"><button class="trail-started"><%= link_to "Let's get started", new_user_registration_path %></button></div> 
+      <div class="trail-btn-div"><div class="trail-skip"><%= link_to "Wait, I already have an account", new_user_session_path %></div></div></div>
+    </div>
+    </div>
+    
+    <div class="trail-button">
+      <a class="trail-prev" onclick='plusSlides(-1)'>&#10094;</a>
+      <a class="trail-next" onclick='plusSlides(1)'>&#10095;</a>
+       <br/>
+    </div>
+
+  </div>
+
+
+
+
+<script>
+
+var slideIndex = 1;
+
+var myTimer;
+
+var slideshowContainer;
+
+window.addEventListener("load",function() {
+    showSlides(slideIndex);
+    myTimer = setInterval(function(){plusSlides(1)}, 400000);
+  
+    //COMMENT OUT THE LINE BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
+    slideshowContainer = document.getElementsByClassName('slideshow-inner')[0];
+  
+    //UNCOMMENT OUT THE LINE BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
+    // slideshowContainer = document.getElementsByClassName('slideshow-container')[0];
+  
+    slideshowContainer && slideshowContainer.addEventListener('mouseenter', pause)
+    slideshowContainer && slideshowContainer.addEventListener('mouseleave', resume)
+})
+
+// NEXT AND PREVIOUS CONTROL
+function plusSlides(n){
+  clearInterval(myTimer);
+  if (n < 0){
+    showSlides(slideIndex -= 1);
+  } else {
+   showSlides(slideIndex += 1); 
+  }
+  
+  //COMMENT OUT THE LINES BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
+  
+  if (n === -1){
+    myTimer = setInterval(function(){plusSlides(n + 2)}, 4000);
+  } else {
+    myTimer = setInterval(function(){plusSlides(n + 1)}, 4000);
+  }
+}
+
+//Controls the current slide and resets interval if needed
+function currentSlide(n){
+  clearInterval(myTimer);
+  myTimer = setInterval(function(){plusSlides(n + 1)}, 4000);
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n){
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  if (slides[slideIndex - 1]) slides[slideIndex-1].style.display = "block";
+  if (dots[slideIndex -1]) dots[slideIndex-1].className += " active";
+}
+
+pause = () => {
+  clearInterval(myTimer);
+}
+
+resume = () =>{
+  clearInterval(myTimer);
+  myTimer = setInterval(function(){plusSlides(slideIndex)}, 4000);
+}
+
+</script>

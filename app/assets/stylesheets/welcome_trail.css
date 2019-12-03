@@ -1,0 +1,146 @@
+.trail-slideshow-container {
+  position: relative;
+  margin: auto;
+  background-color: #FFF5E9 ;
+
+}
+
+.trail-body{
+  background-color: #FFF5E9 ;
+  height: 100vh;
+}
+
+.trail-nav{
+  height: 24px;
+  background-color:#FFEFDC;
+}
+
+.trail-progress-div{
+  height: 62px;
+  background-color: #FFF5E9 ;
+}
+
+.trail-img{
+  padding-bottom: 90px;
+
+}
+.trail-progress-bar{
+  padding-top: 25px;
+}
+
+.mySlides {
+display: none;
+height: 480px; 
+}
+
+.trail-prev,
+.trail-next {
+  cursor: pointer;
+  color: #844B8F;
+  font-weight: bold;
+  font-size: 50px;
+  transition: .6s ease;
+  border-radius: 0 3px 3px 0;
+
+}
+
+.trail-button{
+  display: flex;
+  justify-content: center;
+  background-color: #FFF5E9;
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 25px;
+}
+
+.trail-prev{
+  margin-right: 150px;
+}
+
+.trail-next {
+  border-radius: 3px 3px 3px 3px;
+}
+
+.trail-prev {
+  border-radius: 3px 3px 3px 3px;
+  display: flex;
+}
+
+.trail-text {
+  color: #200026;	
+  font-family: Avenir;	
+  font-size: 21px;	
+  font-weight: 300;	
+  line-height: 29px;
+  padding-top: 200px;
+  padding-bottom: 12px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.trail-welcome{
+  color: #200026;	
+  font-family: "Helvetica Neue";	
+  font-size: 48px;	
+  line-height: 57px;	
+  text-align: center;
+}
+.trail-skip{
+
+  opacity: 0.38;	
+  color: #712090;	
+  font-family: Helvetica;	
+  font-size: 14px;	
+  line-height: 17px;	
+  text-align: center;
+  background-color: #FFF5E9;
+  border: none;
+  text-decoration: underline;
+  padding-top: 20px;
+}
+
+.trail-started{
+  height: 44px;	
+  width: 220px;
+  color: #200026;	
+  font-family: Helvetica;	
+  font-size: 21px;	
+  line-height: 25px;
+  border-radius: 6px;	
+  text-align: center;
+  background-color: #ECCFF7;
+}
+
+.trail-btn-div{
+  display: flex;
+  justify-content: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color .6s ease
+}
+
+.active,
+.dot:hover {
+  background-color: 
+  #844B8F
+}
+
