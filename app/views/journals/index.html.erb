@@ -1,6 +1,23 @@
+<style>
+  .close-button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 10;
+    margin-top: 18px;
+  }
+  .close-button i {
+    font-size: 28px;
+    margin-top: 15px;
+    margin-right: 10px;
+  }
+</style>
+
+<a href='/journals/new' class='close-button'>
+  <i class="fal fa-plus"></i>
+</a>
+
 <body class="bkgrd-cr-sheer">
 <%= render 'journals/indexheader'%>
 <%= render 'journals/entry' %>
 </body>
-
-<%= react_component("FAB") %>
