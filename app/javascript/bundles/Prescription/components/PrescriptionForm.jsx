@@ -44,25 +44,25 @@ export default class PrescriptionForm extends React.Component {
         <div id='add-prescription-form-fields'>
           <div className='add-prescription-form-field-label'>NDC Code</div>
           <div id='add-prescription-search'>
-            <input type='search' id='ndcCode' onChange = {this.handleInputChange('ndcQuery')} placeholder='Ex. 55566-7501'/>
+            <input type='search' id='ndcCode' onChange = {this.handleInputChange('ndcQuery')} placeholder='Ex. 55566-7501' autocomplete='off'/>
             <div id='add-prescription-search-icon'>  
               <i className='far fa-search button is-info' onClick={this.fetchDrugs}></i>
             </div>      
           </div>
           <div className='add-prescription-form-field-label' >Brand Name</div>  
-          <input id="brand" type="string" value={myObj.brandName} readOnly/>
+          <input id="brand" type="string" value={myObj.brandName} readOnly autocomplete='off'/>
           <div className='add-prescription-form-field-label' >Generic Name</div> 
-          <input id="generic-name" type="string" value={myObj.genericName} readOnly/>
+          <input id="generic-name" type="string" value={myObj.genericName} readOnly autocomplete='off'/>
           <div className='add-prescription-form-field-label' >Dosage Form</div> 
-          <input id="dosage-form" type="string" value={myObj.dosageForm} readOnly/>
+          <input id="dosage-form" type="string" value={myObj.dosageForm} readOnly autocomplete='off'/>
           <div className='add-prescription-form-field-label' >Product Type</div> 
-          <input id="product-type" type="string" value={myObj.productType} readOnly/>
+          <input id="product-type" type="string" value={myObj.productType} readOnly autocomplete='off'/>
           <div className='add-prescription-form-field-label' >Product ID</div> 
-          <input id="product-id" type="string" value={myObj.productID} readOnly/>
+          <input id="product-id" type="string" value={myObj.productID} readOnly autocomplete='off'/>
           <div className='add-prescription-form-field-label' >Product NDC</div> 
-          <input id="product-ndc" type="string" value={myObj.productNDC} readOnly/>
+          <input id="product-ndc" type="string" value={myObj.productNDC} readOnly autocomplete='off'/>
           <div className='add-prescription-form-field-label' >My Notes</div>
-          <input id="prescription-notes" onChange={this.handleInputChange('userNotes')} type="text" />
+          <input id="prescription-notes" onChange={this.handleInputChange('userNotes')} type="text" autocomplete='off'/>
         </div>
         <button id='add-prescription-form-submit' type="submit">
           Add

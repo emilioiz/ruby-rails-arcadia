@@ -5,11 +5,11 @@
     <%= form_for @journal, local: true do |form| %>
 
       <div class="entry-item">
-        <%= form.text_field :title , class: "entry-title", placeholder: "Journal Title" %>
+        <%= form.text_field :title , class: "entry-title", placeholder: "Journal Title", autocomplete: 'off' %>
       </div>
 
       <div class="entry-item">
-        <%= form.text_area :description , class: "entry-description", placeholder: "Tell us about your day" %>
+        <%= form.text_area :description , class: "entry-description", placeholder: "Tell us about your day", autocomplete: 'off' %>
       </div>
 
       <div class="entry-item">
