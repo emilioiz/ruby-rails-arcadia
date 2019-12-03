@@ -1,44 +1,6 @@
 <body class="bkgrd-cr-sheer">
-  <header class="journal-header">
-      <div class="journal-placeholder">
-      </div>
-
-
-    <nav class="journal-nav">
-      <div class="journal-nav-buttons">
-        <div id="journal-nav-button1">
-          <img src="https://arcadia-static-assets.s3.amazonaws.com/arcadia-svgs/chevron-back.svg" alt="Back" height="44" width="44" id="journal-nav-back">
-        </div>
-        <div id="journal-nav-button2">
-          <h1>Journal</h1>
-        </div>
-        <div id="journal-nav-button3">
-          <i class="far fa-trash-alt" id="trash-icon" alt="trash icon"></i>
-        </div>
-      </div>
-    <nav>
-  </header>
-  <% @journal.each do |journal| %>
-  <main class="journal-entry-viewer">
-    <div class="journal-entry-container">
-      <div class="journal-entry-info">
-        <div class="info-box">
-          <%= journal.title %>
-        </div>
-        <div class="info-box">
-          <%= journal.created_at %>
-        </div>
-        <div class="info-box">
-          <i class="fal fa-folder-open"></i>
-        </div>
-      </div>
-      <div class="journal-entry-description">
-        <%= journal.description %>
-    </div>
-  </main>
-  <% end %>
+<%= render 'journals/indexheader'%>
+<%= render 'journals/entry' %>
 </body>
 
-  <%= link_to '➕ New Journal Entry', 'journals/new' %>
-<i class="far fa-camera"></i>
-
+<%= react_component("FAB") %>

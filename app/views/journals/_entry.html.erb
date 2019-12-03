@@ -1,0 +1,22 @@
+<% @journal.each do |journal| %>
+  <div class="journal-entry-viewer">
+    <div class="journal-entry-container">
+      <div class="journal-entry-info">
+        <div class="info-box">
+          <%= journal.title %>
+        </div>
+        <div class="info-box">
+          <%= journal.created_at.strftime("%m/%d/%Y") %>
+        </div>
+        <div class="info-box">
+          <%= link_to journal_path(journal.id), method: :delete, data: {confirm: "Are you sure?"} do %>
+            <i class="far fa-trash-alt" id="trash-icon" alt="trash icon"></i>
+          <% end %>
+          <i class="fal fa-folder-open">  Notes</i>
+        </div>
+      </div>
+      <div class="journal-entry-description">
+        <%= journal.description %>
+    </div>
+  </div>
+<% end %>
