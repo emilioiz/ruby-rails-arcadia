@@ -1,0 +1,75 @@
+.log-in-header-div {
+  color: #200026;	
+  font-family:   'Roboto', sans-serif;	
+  font-size: 30px;	
+  padding: 5px;	
+  padding-top: 15px;  
+}
+
+.log-in-body{
+  background-color: #FFF5E9;
+  background-image: url(https://arcadia-static-assets.s3.amazonaws.com/arcadia-svgs/sign-up-img.png);
+  background-repeat: no-repeat;
+  background-position: right 215px top -140px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 30% 15% 15% 10% 30%;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  height: 100vh;
+}
+
+.log-in-header-div { 
+  grid-area: 1 / 1 / 2 / 2;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding-top: 50px;
+}
+
+.log-in-email-div { 
+  grid-area: 2 / 1 / 3 / 2;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr;
+  margin: auto;
+  text-align: center;
+}
+
+.log-in-pass-div { 
+  grid-area: 3 / 1 / 4 / 2;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3fr;
+  margin: auto;
+  text-align: center;
+}
+
+.log-in-remember-div { 
+  grid-area: 4 / 1 / 5 / 2;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3fr;
+  margin: auto;
+  text-align: center;
+  padding-top: 30px;
+}
+.remember-div{
+  padding-top: 20px;
+}
+.log-in-btn-div { 
+  grid-area: 5 / 1 / 6 / 2;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3fr;
+  margin: 50px;
+  text-align: center;
+  color: #844B;
+}
+
+.sign-up-remember{
+  color:#200026;	
+  font-family: "Helvetica Neue";
+  font-size: 15px;	
+  font-weight: bold;
+}

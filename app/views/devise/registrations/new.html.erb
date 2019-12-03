@@ -8,8 +8,6 @@
     <div class="sign-up-header">Sign up</div>
     <div class="sign-up-text">Just by entering your email and password.</div>
   </div>
-
-  <div class="form-div">
     <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
         <%= render "devise/shared/error_messages", resource: resource %>
 
@@ -21,54 +19,19 @@
           <%= f.password_field :password, autocomplete: "new-password", :class => 'sign-up-field password-sign-up', placeholder: "Password" %>
         </div>
 
-        <div class="sign-up-show">Show</div>
-
         <div class="feild field-password password-confirm-div">
           <%= f.password_field :password_confirmation, autocomplete: "confirm-password", :class => 'sign-up-field password-sign-up', placeholder: "Confirm Password"%>
         </div>
 
-        <div class="sign-up-show-confirm">Show</div>
-    </div>
-
-    <div class="consent-div">
-      <div class="consent">
-        <p class= "rectangle"></p>
-        <p class="sign-up-confirm">I confirm that I have read, consent and agree to Arcadia’s <u>User Agreement</u> and <u>Privacy Policy</u>.</p>
-      </div>
-      <div class="actions sign-up">
-        <%= f.submit "Sign up", :class => 'sign_up-btn'  %>
-      </div>
-      <div class="sign-up-skip"><%= link_to "Already have an account", new_user_session_path %></div>
-      <div class="sign-up-hr"></div>
-    </div>
-
-    <div class="alt-div">
-      <div class="alt-sign-up">
-        <p class="or-sign-up">or sign up with</p>
-        <button class="google-btn"><i class = "ion-social-googleplus-outline"></i>Google+</button>
-        <button class="facebook-btn"><i class = "ion-social-googleplus-outline"></i>Facebook</button>
+        <div class="consent">
+          <p class= "rectangle"></p>
+          <p class="sign-up-confirm">I confirm that I have read, consent and agree to Arcadia’s <u>User Agreement</u> and <u>Privacy Policy</u>.</p>
+        </div>
+        <div class="actions sign-up">
+          <%= f.submit "Sign up", :class => 'sign_up-btn'  %>
+        </div>
+        <div class="sign-up-skip"><%= link_to "Already have an account", new_user_session_path %></div>
+        <div class="sign-up-hr"></div>
       </div>
     <% end %>
-  </div>
 </div>
-
-<script>
-  const show = document.querySelector('.sign-up-show')
-  const confirmShow = document.querySelector('.sign-up-show-confirm')
-  const passInput = document.querySelector('#user_password')
-  const passConfirm = document.querySelector('#user_password_confirmation')
-  const handleHitMe = () => {
-    if (passInput.type === "password") {
-      passInput.type = "text";
-      passConfirm.type = "text";
-    } else {
-      passInput.type = "password";
-      passConfirm.type = "password";
-    } 
-  }
-  show.addEventListener('click', handleHitMe)
-  confirmShow.addEventListener('click', handleHitMe)
-</script>
-
-
-

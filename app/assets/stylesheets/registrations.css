@@ -8,6 +8,7 @@
   grid-template-rows: 6% 15% 40% 25% 14%;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
+  height: 100vh;
 }
 
 .sign-up-close{
@@ -117,7 +118,7 @@ padding-top: 24px;
   height: 20px;	
   width: 20px;	
   border: 1px solid #200026;	
-  background-color: #FFF
+  background-color: #FFF;
 }
 
 .sign-up-confirm {
@@ -167,36 +168,11 @@ padding-top: 24px;
   padding: 20px;
 }
 
-.google-btn{
-  height: 23px;	
-  width: 100px;	
-  color: #FFFFFF;	
-  font-family: Helvetica;	
-  font-size: 18px;	
-  line-height: 22px;	
-  text-align: center;
-  height: 23px;	
-  width: 100px;	
-  height: 45px;	
-  width: 220px;	
-  background-color: #DD4B39;
-  border-radius: 4px;   
-}
-
-.facebook-btn{
-  height: 23px;	
-  width: 100px;	
-  color: #FFFFFF;	
-  font-family: Helvetica;	
-  font-size: 18px;	
-  line-height: 22px;	
-  text-align: center;
-  height: 23px;	
-  width: 100px;	
-  height: 45px;	
-  width: 220px;	
-  background-color: #415DAF;
-  border-radius: 4px;
+.alt-social{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .close-div { 
@@ -228,6 +204,7 @@ padding-top: 24px;
   grid-template-rows: 3fr;
   margin: auto;
   text-align: center;
+  padding-top: 30px;
 }
 
 .alt-div { 

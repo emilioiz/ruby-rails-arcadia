@@ -1,3 +1,57 @@
-<h1> These are my agendas </h1>
+<%= render "global/close" %>
+<div class='agenda'>
+  <div id='add-contact-status-bar'></div>
+  <div class="agenda-title"> My Agenda </div>
 
-<%= react_component("Agenda")%>
+  <div class= "agenda-meds"> Medications
+
+    <div>
+      <div class= "agenda-meds-list" >
+      <table> 
+        <tbody>
+            <tr>
+              <th>Medication</th>
+              <th>Date Time</th>
+            </tr>
+            <% @prescriptions.each do |prescription_event|%>
+            <tr class='agenda-table-data'>
+            <td><%= prescription_event[:prescription].name %></td>
+            <td><%= prescription_event[:activity_date] %></td>
+            </tr>
+            <%end%>
+          </tbody>
+      </table> 
+      </div>
+    </div>
+
+  </div>
+
+  <div class= "agenda-appts"> Appointments
+
+    <div>
+      <div class= "agenda-appts-list">
+      <table> 
+      <tbody>
+            <tr>
+              <th>Office</th>
+              <th>Date Time</th>
+            </tr>
+            <% @appointments.each do |appointment_event|%>
+            <tr class='agenda-table-data'>
+              <td><%= appointment_event[:appointment].name%></td>
+              <td><%= appointment_event[:activity_date] %></td>
+            </tr>
+            <%end%>
+          </tbody>
+        </table> 
+      </div>
+    </div>
+
+  </div>
+
+  <div class= "agenda-notes"> Notes
+    <div class="agenda-notes-list">
+      <i class="fas fa-user-hard-hat"></i>
+    </div>
+  </div>
+</div>

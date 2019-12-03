@@ -1,39 +1,24 @@
-<div>
-  <%= form_for @journal, local: true do |form| %>
-    <p>
-      <%= form.label :title %><br>
-      <%= form.text_field :title %>
-    </p>
+<body class="bkgrd-cr-sheer">
+  <%= render 'journals/newheader'%>
 
-    <p>
-      <%= form.label :description %><br>
-      <%= form.text_area :description %>
-    </p>
+  <div class="entry-container">
+    <%= form_for @journal, local: true do |form| %>
 
-    <p>
-      <%= form.submit 'Create Entries' %>
-    </p>
-  <% end %>
-</div>
+      <div class="entry-item">
+        <%= form.text_field :title , class: "entry-title", placeholder: "Journal Title" %>
+      </div>
 
+      <div class="entry-item">
+        <%= form.text_area :description , class: "entry-description", placeholder: "Tell us about your day" %>
+      </div>
 
+      <div class="entry-item">
+        <%= form.submit 'Post Journal Entry', class: "entry-submit" %>
+      </div>
 
-<h1>Journal#new</h1>
-<p>Find me in app/views/journals/new.html.erb</p>
-<br>
+    <% end %>
+    <div class="add-picture-div">
 
-
-<h1>Important to Journal</h1>
-
-<ul>
-  <li>
-    app/controllers/journals_controller.erb
-  </li>
-  <li>
-    app/views/journals/index.html.erb
-  </li>
-  <li>
-     app/views/journals/new.html.erb
-  </li>
-<ul>
-
+    </div>
+  </div>
+</body>

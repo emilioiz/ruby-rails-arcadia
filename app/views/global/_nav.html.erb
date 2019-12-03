@@ -9,12 +9,12 @@
     </a>
   <div>
   <div id='home-nav-overlay-content'>
-    <div class='ft-cr-snow ft-nunito-24'><%= link_to "Profile",profiles_url %></div>
-    <div class='ft-cr-snow ft-nunito-24'><%= link_to "Journal",journals_url %></div>
-    <div class='ft-cr-snow ft-nunito-24'><%= link_to "Events",events_url %></div>
-    <div class='ft-cr-snow ft-nunito-24'><%= link_to "Contacts",contacts_url %></div>
-    <div class='ft-cr-snow ft-nunito-24'><%= link_to "Medications",prescriptions_url %></div>
-    <div class='ft-cr-snow ft-nunito-24'><%= link_to "Settings",settings_url %></div>
-    <div class='ft-cr-snow ft-nunito-24'><%= link_to "Sign Out",destroy_user_session_url,method: :delete %></div>
+    <div class='ft-cr-snow ft-nunito-24' onclick='closeNav()' ><%= link_to "Profile",profiles_url %></div>
+    <div class='ft-cr-snow ft-nunito-24' onclick='closeNav()' ><%= link_to "Activity",events_url %></div>
+    <div class='ft-cr-snow ft-nunito-24' onclick='closeNav()' ><%= link_to "Contacts",contacts_url %></div>
+    <div class='ft-cr-snow ft-nunito-24' onclick='closeNav()' ><%= link_to "Medications",prescriptions_url %></div>
+    <div class='ft-cr-snow ft-nunito-24' onclick='closeNav()' ><%= link_to "Journal",journals_url %></div>
+    <div class='ft-cr-snow ft-nunito-24' onclick='closeNav()' ><%= link_to "Settings",settings_url %></div>
+    <div class='ft-cr-snow ft-nunito-24' onclick='closeNav()' ><%= link_to "Sign Out",destroy_user_session_url,method: :delete %></div>
   </div>
 <div>

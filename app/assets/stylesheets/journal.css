@@ -1,3 +1,5 @@
+/* This is for everything that shows up at the top of the page. */
+
 .journal-header {
   margin: 0;
   padding: 0;
@@ -7,7 +9,7 @@
 .journal-placeholder {
   background-color: #FFEFDC ;
   height: 24px;
-  width: 100vw;
+  width: 100vw2;
   box-sizing: border-box;
 }
 
@@ -18,15 +20,23 @@
   padding: 0;
 }
 
+.journal-nav-two {
+  font-family:Srimo, sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+  margin: 0;
+  padding: 0;
+}
+
 .journal-nav-buttons {
   display: flex;
   height: 44px;
-  align-items: center;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   border-bottom: 2px solid #E8E3DC;
   box-shadow: 0px 0px 4px 0px #E8E3DC;
   align-items: center;
+  justify-content: flex-start;
   margin: 0;
 }
 
@@ -35,11 +45,12 @@
 }
 
 #journal-nav-back {
-  margin: 5px 0 0 0;
+  margin: 5px 0px 0 0;
 }
 
 #journal-nav-button2 {
-  margin: 0;
+  margin: 0 auto;
+  padding-right: 15px;
 }
 
 #journal-nav-button3 {
@@ -53,6 +64,7 @@
   font-size: 24px;
 }
 
+/* This is for returning the smaller render of an entry. */
 
 .journal-entry-container {
   margin: 5px 0px;
@@ -77,6 +89,7 @@
   margin: 0px;
   flex-direction: row;
   flex-basis: 20px;
+  display:flex;
 }
 
 .info-box {
@@ -101,7 +114,7 @@
   flex: 1;
   font-family: Srimo, sans-serif;
   font-weight: 450;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 22px;
 }
 
@@ -122,4 +135,68 @@
   font-weight: 300;
   font-size: 16px;
   line-height: 22px;
+  justify-content: space-evenly;
 }
+
+/* This is for making a new entry. */
+
+.entry-container {
+  box-sizing: border-box;
+  padding: 19px;
+  display:flex;
+  flex-direction: column;
+  min-height: 560px;
+}
+
+.entry-item {
+  justify-content: center;
+}
+
+.entry-item.info-box:nth-child(2) {
+  min-height: 550px;
+}
+
+.entry-title{
+  outline: none;
+  border: none;
+  font-family: Srimo;
+  margin-left:auto;
+  margin-right:auto;
+  min-width: 340px;
+  background: #FFF8F0;
+  text-shadow: 1px 1px 1px #FFF;
+  font-size: 18px;
+  color: rgba(132,75,143,0.55);
+  letter-spacing: 1px;
+ }
+
+ .entry-description {
+  outline: none;
+  font-size: 16px;
+  font-family: Srimo;
+  border: none;
+  margin-left:auto;
+  margin-right:auto;
+  min-width: 100%;
+  min-height: 410px;
+  background: #FFF8F0;
+  color: rgba(132,75,143,0.55);
+  letter-spacing: 1px;
+ }
+
+ .entry-submit {
+   width: 100%;
+   border: 0;
+   color: rgba(132,75,143,0.80);
+   background-color: #FFF5E9;
+   opacity: 25%;
+ }
+
+ .add-picture-div {
+  padding: 2px;
+  margin: 0px;
+  height: 75px;
+  border-top: 1px solid #979797;
+  box-shadow: inset 0px 3px 0 0 #D8D8D8;
+  bottom: 0px;
+ }
