@@ -12,15 +12,15 @@
         <%= render "devise/shared/error_messages", resource: resource %>
 
         <div class="field field-email email-div">
-          <%= f.email_field :email,  autocomplete: "email", :class => 'sign-up-field email-sign-up', placeholder: "Email" %>
+          <%= f.email_field :email,  autocomplete: "email", :class => 'sign-up-field email-sign-up', placeholder: "Email", autocomplete: "off" %>
         </div>
 
         <div class="field field-password password-div">
-          <%= f.password_field :password, autocomplete: "new-password", :class => 'sign-up-field password-sign-up', placeholder: "Password" %>
+          <%= f.password_field :password, autocomplete: "new-password", :class => 'sign-up-field password-sign-up', placeholder: "Password", autocomplete: "off" %>
         </div>
 
         <div class="feild field-password password-confirm-div">
-          <%= f.password_field :password_confirmation, autocomplete: "confirm-password", :class => 'sign-up-field password-sign-up', placeholder: "Confirm Password"%>
+          <%= f.password_field :password_confirmation, autocomplete: "confirm-password", :class => 'sign-up-field password-sign-up', placeholder: "Confirm Password", autocomplete: "off"%>
         </div>
 
         <div class="consent">
