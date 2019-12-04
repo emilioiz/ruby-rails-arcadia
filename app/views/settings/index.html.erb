@@ -1,2 +1,24 @@
-<h1>Users Settings Page</h1>
-<h3><%= link_to "Go Home",root_url %></h3>
+<div class="settings-background">
+   <div class="settings-close">
+     <a href='javascript:history.go(-1)'>
+      <img src="https://arcadia-static-assets.s3.amazonaws.com/arcadia-svgs/close.svg" alt="close button" />
+     </a>
+   </div>
+   <h1 class="settings-title">Settings</h1>
+<div class= "line-settings-2"></div>
+
+<div class="settings-options-parent">
+    <% @settings.each do |setting| %>
+        <div class="setting-options-child-container">
+            <div class="settings-options-child" id="left"><%= setting[:label] %></div>
+            <div class="settings-options-child" id="right">
+                <%= image_tag setting[:icon_url]  %>
+            </div>
+        </div>
+        <div class="line-settings"></div> 
+    <% end %>
+</div>
+<div class="settings-footnote">
+Enable this option to receive daily health insights according to your logged symptoms.
+</div>
+

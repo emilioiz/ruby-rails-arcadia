@@ -1,0 +1,203 @@
+.profile-close{
+  border: none;
+  font-size: 20px;
+  background-color: #F7EAFC;
+  float: right;
+}
+
+.profile-nav{
+  height: 24px;
+  background-color:#844B8F;
+}
+.tweet-profile{
+  color:#844B8F;
+}
+
+.profile-container {
+  background: #F7EAFC;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 10% 12% 68% 10%;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  height: 100vh;
+}
+
+.profile-title {
+  font-size: 4rem;
+  font-weight: 300;
+  text-align: center;
+  color: #200026;	
+  font-family: "Helvetica Neue";
+  border-bottom: 4px solid rgba(132,75,143,0.55);	
+
+}
+
+.user-profile {
+  text-align: center;
+}
+
+.profile-avatar-container {
+  height: 139px;	
+  width: 167px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-image: url(https://arcadia-static-assets.s3.amazonaws.com/arcadia-svgs/profile-pic.png);
+  background-position: center;
+  background-size: cover;
+
+  .profile-avatar {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+  }
+}
+
+.profile-user-name {
+  font-size: 2.3rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+.profile-list {
+  display: flex;
+  justify-content: center;
+
+  .profile-list-item {
+    margin-right: 1em;
+    font-size: 0.8rem;
+    // color: #ccc;
+    text-transform: capitalize;
+    font-weight: bold;
+    list-style-type: none;
+    
+  }
+}
+
+.profile-user-info {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 30px 0 15px;
+  margin-top: -15px;
+  color: #fff;
+
+  .profile-h3 {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: -1.2rem;
+    box-sizing: border-box;
+    background-color: rgba(132,75,143,0.55);
+    border-radius: 5px;
+    padding: 10px;
+  }
+
+
+}
+
+.profile-tweet {
+  // background: darkblue;
+  width: 12rem;
+  padding-top: 40px;
+
+  .profile-h4 {
+    color: rgba(132,75,143,0.55);
+    text-transform: uppercase;
+    font-size: 0.6rem;
+    letter-spacing: 1px; 
+  }
+
+  .profile-tweet {
+    color:#844B8F;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    background: #F7EAFC;
+  }
+}
+  
+  .profile-nav-div { grid-area: 1 / 1 / 2 / 2; }
+  .profile-title { grid-area: 2 / 1 / 3 / 2; }
+  .profile-main { grid-area: 3 / 1 / 4 / 2; }
+  .profile-tweet { grid-area: 4 / 1 / 5 / 2; }
+
+.profile-edit{
+  height: 47px;	
+  width: 180px;	
+  background-color: #ECCFF7;
+  color: #200026;	
+  font-family: "Helvetica Neue";	
+  font-size: 18px;	
+  line-height: 22px;	
+  text-align: center;
+}
+
+.profile-done{
+  height: 47px;	
+  width: 180px;	
+  background-color: #200026;
+  color: #FFFFFF;	
+  font-family: "Helvetica Neue";	
+  font-size: 18px;	
+  line-height: 22px;	
+  text-align: center;
+}
+
+.profile-btns{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 0;
+  
+}
+
+.profile-body{
+  background-color: #FFF5E9;
+  height: 50vh;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-name{
+  color: #844B8F;	
+  font-family: "Helvetica Neue";	
+  font-size: 24px;	
+  font-weight: bold;	
+  line-height: 29px;
+  border-bottom: 0.5px solid rgba(241,172,254,0.55);
+}
+
+.profile-name-notes{
+  color: #844B8F;	
+  font-family: "Helvetica Neue";	
+  font-size: 24px;	
+  font-weight: bold;	
+  line-height: 29px;
+  border-bottom:4px solid rgba(132,75,143,0.55);
+}
+
+.profile-info-notes{
+  color: rgba(132,75,143,0.55);	
+  font-family: "Helvetica Neue";	
+  font-size: 18px;	
+  line-height: 22px;	
+  text-align: right;
+  border-bottom: 4px solid rgba(132,75,143,0.55);
+}
+
+.profile-info{
+  color: rgba(132,75,143,0.55);	
+  font-family: "Helvetica Neue";	
+  font-size: 18px;	
+  line-height: 22px;	
+  text-align: right;
+  border-bottom: 0.5px solid rgba(241,172,254,0.55);
+}
+
+
+
